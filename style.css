@@ -1,0 +1,52 @@
+img { max-width: 100%; }
+
+body {
+  margin: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+}
+
+.container {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lane {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.track {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  border-bottom: 3px solid black;
+  width: 600px;
+}
+
+button { background-color: white; }
+
+#apollo-btn:hover { background-color: #d7f3ff; }
+#nebula-btn:hover { background-color: #eadcff; }
+#comet-btn:hover  { background-color: #ffe6d6; }
+
+#apollo-rocket { grid-column: 1; }
+#nebula-rocket { grid-column: 1; }
+#comet-rocket  { grid-column: 1; }
+
+#winner {
+  background-color: gold;
+  font-size: 80px;
+  margin-top: 80px;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
